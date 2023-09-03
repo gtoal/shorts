@@ -97,7 +97,7 @@ int main(int argc, char **argv) {
   leftline[maxwidth] = L' ';
   leftline[maxwidth+1] = L'|';
   leftline[maxwidth+2] = L' ';
-  if (htmlmode) fwprintf(stdout, L"<html><head><title>%s vs %s</title></head><body><pre><font size=-0>", argv[1], argv[2]);
+  if (htmlmode) fwprintf(stdout, L"<html><head><meta charset=\"utf-8\"><title>%s vs %s</title></head><body><pre><font size=-0>", argv[1], argv[2]);
   for (;;) {
     leftdone = LEFT(); rightdone = RIGHT();
     if (leftdone && rightdone) break;
